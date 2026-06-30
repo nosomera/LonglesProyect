@@ -1,74 +1,62 @@
 /* src/App.css */
-
-/* Importamos una tipografía estilo máquina de escribir / misterio */
-@import url('https://fonts.googleapis.com/css2?family=Special+Elite&family=Creepster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
 
 :root {
-  --bg-color: #0a0a0a;
-  --panel-bg: #121212;
-  --text-primary: #dddddd;
-  --text-accent: #8b0000; /* Rojo sangre oscuro */
-  --border-color: #262626;
+  --bg-color: #050505;
+  --panel-bg: #0f0f0f;
+  --text-primary: #cccccc;
+  --text-accent: #8b0000;
+  --border-color: #1a1a1a;
 }
 
 body {
   margin: 0;
-  padding: 0;
   background-color: var(--bg-color);
   font-family: 'Special Elite', monospace;
   color: var(--text-primary);
-  overflow-x: hidden;
 }
 
-/* Contenedor principal de la experiencia */
 .terror-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  padding: 20px;
-  box-sizing: border-box;
-  background: radial-gradient(circle, #1a0505 0%, #0a0a0a 70%);
+  padding: 50px 20px;
+  background: radial-gradient(circle, #100505 0%, #050505 80%);
 }
 
-/* Encabezado */
-.terror-header {
-  text-align: center;
-  margin-bottom: 30px;
-  letter-spacing: 4px;
+.terror-section {
+  width: 100%;
+  max-width: 900px;
+  margin-bottom: 100px; /* Espacio entre secciones */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .terror-header h1 {
   font-size: 3rem;
   color: var(--text-accent);
-  margin: 0;
   text-transform: uppercase;
-  text-shadow: 0 0 10px rgba(139, 0, 0, 0.6);
-  animation: glitch 4s infinite;
+  letter-spacing: 6px;
+  margin-bottom: 20px;
+  text-shadow: 0 0 15px rgba(139, 0, 0, 0.4);
+  animation: flicker 5s infinite;
 }
 
-/* Contenedor del reproductor */
 .terror-main {
   width: 100%;
-  max-width: 900px;
   background-color: var(--panel-bg);
   border: 1px solid var(--border-color);
-  border-radius: 4px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8), 0 0 15px rgba(139, 0, 0, 0.1);
-  padding: 15px;
-  box-sizing: border-box;
+  padding: 10px;
+  box-shadow: 0 0 40px rgba(0,0,0,1);
 }
 
-/* Ajuste responsivo para el video (16:9) */
 .video-wrapper {
   position: relative;
   width: 100%;
-  padding-bottom: 56.25%; /* Relación de aspecto 16:9 */
+  padding-bottom: 56.25%;
   height: 0;
   background-color: #000;
-  border-radius: 2px;
-  overflow: hidden;
 }
 
 .video-wrapper video {
@@ -77,27 +65,42 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: contain;
-  outline: none;
 }
 
-/* Pequeño efecto de parpadeo para el título */
-@keyframes glitch {
-  0%, 100% { opacity: 1; }
-  41% { opacity: 1; }
-  42% { opacity: 0.8; }
-  43% { opacity: 1; }
-  47% { opacity: 1; }
-  48% { opacity: 0.4; }
-  49% { opacity: 1; }
+/* Divisor entre secciones (Efecto de línea de interferencia) */
+.horror-divider {
+  width: 100%;
+  max-width: 600px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--text-accent), transparent);
+  margin: 40px 0 80px 0;
+  opacity: 0.3;
+  position: relative;
 }
 
-/* Ajustes para pantallas pequeñas */
+.horror-divider::after {
+  content: "DATA CORRUPTED";
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 10px;
+  color: var(--text-accent);
+  letter-spacing: 2px;
+}
+
+.terror-footer {
+  margin-top: 50px;
+  font-size: 12px;
+  color: #333;
+  letter-spacing: 5px;
+}
+
+@keyframes flicker {
+  0%, 18%, 22%, 25%, 53%, 57%, 100% { opacity: 1; }
+  20%, 24%, 55% { opacity: 0.3; }
+}
+
 @media (max-width: 600px) {
-  .terror-header h1 {
-    font-size: 2rem;
-  }
-  .terror-main {
-    padding: 8px;
-  }
+  .terror-header h1 { font-size: 1.8rem; }
 }
