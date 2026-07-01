@@ -9,7 +9,7 @@ const App: React.FC = () => {
   // Video 2 - PEGA AQUÍ TU NUEVA URL DE FIREBASE
   const videoUrl2: string = "https://firebasestorage.googleapis.com/v0/b/loveuts-7a90a.firebasestorage.app/o/Prisoners.2013.bluray.latino-e-ingles-subt.mp4?alt=media&token=cf1739ae-f7fe-4768-bcb7-018e5821080b";
 // Video 3 - PEGA AQUÍ TU NUEVA URL DE FIREBASE
-  const videoUrl3: string = "https://firebasestorage.googleapis.com/v0/b/loveuts-7a90a.firebasestorage.app/o/Looper.2012.latino-e-ingles-subt.mkv?alt=media&token=086b8faf-e79f-4325-8f80-1f3cfa676967";
+  const videoUrl3: string = "https://firebasestorage.googleapis.com/v0/b/loveuts-7a90a.firebasestorage.app/o/Looper.2012.latino-e-ingles-subt.mp4?alt=media&token=1261d3b3-b0dc-43fd-a872-4891ba9cca76";
 
   return (
     <div className="terror-container">
