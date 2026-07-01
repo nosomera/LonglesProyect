@@ -8,6 +8,8 @@ const App: React.FC = () => {
 
   // Video 2 - PEGA AQUÍ TU NUEVA URL DE FIREBASE
   const videoUrl2: string = "https://firebasestorage.googleapis.com/v0/b/loveuts-7a90a.firebasestorage.app/o/Prisoners.2013.bluray.latino-e-ingles-subt.mp4?alt=media&token=cf1739ae-f7fe-4768-bcb7-018e5821080b";
+// Video 3 - PEGA AQUÍ TU NUEVA URL DE FIREBASE
+  const videoUrl3: string = "https://firebasestorage.googleapis.com/v0/b/loveuts-7a90a.firebasestorage.app/o/Looper.2012.latino-e-ingles-subt.mkv?alt=media&token=086b8faf-e79f-4325-8f80-1f3cfa676967";
 
   return (
     <div className="terror-container">
@@ -36,6 +38,19 @@ const App: React.FC = () => {
         <main className="terror-main">
           <div className="video-wrapper">
             <video src={videoUrl2} controls controlsList="nodownload" preload="metadata">
+              Tu navegador no soporta el video.
+            </video>
+          </div>
+        </main>
+      </section>
+
+      <section className="terror-section">
+        <header className="terror-header">
+          <h1>Looper</h1> {/* Puedes cambiar este título */}
+        </header>
+        <main className="terror-main">
+          <div className="video-wrapper">
+            <video src={videoUrl3} controls controlsList="nodownload" preload="metadata">
               Tu navegador no soporta el video.
             </video>
           </div>
