@@ -19,9 +19,9 @@ const App: React.FC = () => {
   const fantasma2: string = "https://firebasestorage.googleapis.com/v0/b/loveuts-7a90a.firebasestorage.app/o/Ushiro%20no%20shonen%20kamui-san%20%2002.mp4?alt=media&token=34659e24-1929-4657-ba5d-7fd03577840d";
   const fantasma3: string = "https://firebasestorage.googleapis.com/v0/b/loveuts-7a90a.firebasestorage.app/o/Ushiro%20no%20shonen%20kamui-san%20%2003.mp4?alt=media&token=bde004b1-c89c-49ba-b294-555a643457de";
   const fantasma4: string = "https://firebasestorage.googleapis.com/v0/b/loveuts-7a90a.firebasestorage.app/o/Ushiro%20no%20shonen%20kamui-san%20%2004.mp4?alt=media&token=8dbba634-ce28-45ae-a797-8a8f081b899f";
-  const fantasma5: string = "";
-  const fantasma6: string = "";
-  const fantasma7: string = "";
+  //const fantasma5: string = "";
+  //const fantasma6: string = "";
+  //const fantasma7: string = "";
 
 
   return (
