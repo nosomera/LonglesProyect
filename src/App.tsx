@@ -142,7 +142,7 @@ const App: React.FC = () => {
         </header>
         <main className="terror-main">
           <div className="video-wrapper">
-            <video src={videoUrl10} controls controlsList="nodownload" preload="metadata">
+            <video src={videoUrl11} controls controlsList="nodownload" preload="metadata">
               Tu navegador no soporta el video.
             </video>
           </div>
