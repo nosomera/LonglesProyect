@@ -17,6 +17,8 @@ const App: React.FC = () => {
   const videoUrl9: string = "https://firebasestorage.googleapis.com/v0/b/loveuts-7a90a.firebasestorage.app/o/yani%20neko%2006.mp4?alt=media&token=75a8d98d-4ea9-4261-86a8-a21668dfcf2a";
   
   const videoUrl10: string = "https://firebasestorage.googleapis.com/v0/b/loveuts-7a90a.firebasestorage.app/o/yani%20neko%2007.mp4?alt=media&token=13a1bf4c-3676-4197-a8d4-6358762cb901";
+  
+  const videoUrl11: string = "https://firebasestorage.googleapis.com/v0/b/loveuts-7a90a.firebasestorage.app/o/Yani%20Neko%20-08.mp4?alt=media&token=6b49c405-f187-480c-a517-b733db6e2a9f";
 
 //--------------------------------------------------------------//
   const fantasma1: string = "https://firebasestorage.googleapis.com/v0/b/loveuts-7a90a.firebasestorage.app/o/Ushiro%20no%20shonen%20kamui-san%20%2001.mp4?alt=media&token=33211a77-045f-47f0-b8a6-deefce6c3e2c";
@@ -131,7 +133,21 @@ const App: React.FC = () => {
           </div>
         </main>
       </section>
-
+      
+      
+      
+<section className="terror-section">
+        <header className="terror-header">
+          <h1>Gata fumona 8</h1> {/* Puedes cambiar este título */}
+        </header>
+        <main className="terror-main">
+          <div className="video-wrapper">
+            <video src={videoUrl10} controls controlsList="nodownload" preload="metadata">
+              Tu navegador no soporta el video.
+            </video>
+          </div>
+        </main>
+      </section>
 
 
 
